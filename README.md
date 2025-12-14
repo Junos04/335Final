@@ -1,9 +1,10 @@
 # PlanetTerp Course Watchlist
 
 ### Submitted by:
+Juno Song (jsong04)
 
 ### Group Members:
-Juno Song (jsong04)
+Prabhat Jain (pain125), Allison Lee (alee1244), Nick Yuan (nyuan), Juno Song (jsong04)
 
 ### App Description:
 Allows users to search UMD courses via PlanetTerp API by department, class number, and minimum GPA, and add them to a personal watchlist stored in MongoDB.
@@ -12,7 +13,7 @@ Allows users to search UMD courses via PlanetTerp API by department, class numbe
 _____
 
 ### APIs:
-- [PlanetTerp API v1](https://planetterp.com/api/v1)
+- PlanetTerp API v1 - (https://planetterp.com/api/v1)
 - Provides course information including department, course number, title, credits, average GPA, and professors.
 
 ### Contact Email:
