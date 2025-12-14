@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PlanetTerp Course Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Sancreek&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1>PlanetTerp Course Watchlist</h1>
+
+<form id="searchForm">
+  <select id="department" autocomplete="organization">
+    <option value="">All Departments</option>
+    <option value="CMSC">CMSC</option>
+    <option value="MATH">MATH</option>
+    <option value="PHYS">PHYS</option>
+    <option value="CHEM">CHEM</option>
+    <option value="BIOL">BIOL</option>
+    <option value="STAT">STAT</option>
+    <option value="ECON">ECON</option>
+    <option value="ENGL">ENGL</option>
+  </select>
+
+  <input type="text" id="className" placeholder="Class number (e.g. 131)" autocomplete="off">
+  <input type="number" id="minGPA" placeholder="Min GPA" step="0.1" min="0" max="4" autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+
+<h2>Your Watchlist</h2>
+<div id="watchlist"></div>
+
+<h2>Results</h2>
+<div id="results"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
