@@ -4,7 +4,7 @@
 Juno Song (jsong04)
 
 ### Group Members:
-Prabhat Jain (pain125), Allison Lee (alee1244), Nick Yuan (nyuan), Juno Song (jsong04)
+Prabhat Jain (pjain125), Allison Lee (alee1244), Nick Yuan (nyuan), Juno Song (jsong04)
 
 ### App Description:
 Allows users to search UMD courses via PlanetTerp API by department, class number, and minimum GPA, and add them to a personal watchlist stored in MongoDB.
