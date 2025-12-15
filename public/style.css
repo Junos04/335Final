@@ -1,37 +1,42 @@
 html {
-    background-color: #f0e2cf;
+    background-color: #ffffff;
 }
 
 body {
-    font-family: 'Gloock', sans-serif;
-    color: rgb(201, 51, 51);
+    font-family: 'IBM Plex Serif', sans-serif;
+    color: black;
     text-align: center;
 }
 
+.outside {
+    border: 5px solid #c93333;
+    border-radius: 15px;
+    width: 500px;
+    margin: auto;
+    background-color: #fff0b9;
+    padding: 10px;
+}
+
 h1 {
-    font-family: 'Sancreek', sans-serif;
-    color: black;
+    font-family: 'IBM Plex Serif', sans-serif;
+    color: #c93333;
 }
 
 input, select {
-    font-family: 'Gloock', sans-serif;
+    font-family: 'IBM Plex Serif', sans-serif;
     font-size: 16px;
     width: 200px;
-    background-color: #f0e2cf;
     margin: 5px;
 }
 
 button {
-    font-family: 'Sancreek', sans-serif;
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-weight: bold;
     font-size: 16px;
-    color: rgb(240, 226, 215);
-    background-color: #463932;
-    border: 2px solid black;
+    color: #c93333;
+    background-color: #ffcb10;
+    border: 2px solid #d7a905;
     padding: 5px 10px;
     border-radius: 10px;
     margin-left: 5px;
-}
-
-div {
-    margin: 5px;
 }
