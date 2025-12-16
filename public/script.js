@@ -37,12 +37,21 @@ searchForm.addEventListener('submit', async (e) => {
   const className = document.getElementById('className').value;
   const minGPA = document.getElementById('minGPA').value;
 
+  resultsDiv.innerHTML = ''; // ✅ Clear previous results or messages
+
   try {
     const res = await fetch(`/search?department=${department}&className=${className}&minGPA=${minGPA}`);
-    if (!res.ok) throw new Error('Search failed');
     const data = await res.json();
 
-    resultsDiv.innerHTML = '';
+    // if server returns error 
+    if (!res.ok || data.length === 0) {
+      const errorDiv = document.createElement('div');
+      errorDiv.textContent = data.error || 'No courses found matching your criteria in the API';
+      resultsDiv.appendChild(errorDiv);
+      return; // stop processing further
+    }
+
+    // display results if data exists
     data.forEach(course => {
       const div = document.createElement('div');
       div.innerHTML = `
@@ -61,10 +70,16 @@ searchForm.addEventListener('submit', async (e) => {
       });
       resultsDiv.appendChild(div);
     });
+
   } catch (err) {
     console.error(err);
+    // network or fetch error
+    const errorDiv = document.createElement('div');
+    errorDiv.textContent = 'Failed to fetch courses.';
+    resultsDiv.appendChild(errorDiv);
   }
 });
+
 
 // load watchlist on page load
 loadWatchlist();
