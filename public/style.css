@@ -40,3 +40,7 @@ button {
     border-radius: 10px;
     margin-left: 5px;
 }
+
+button:active {
+    background-color: #ffb710;
+}
