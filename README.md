@@ -10,17 +10,17 @@ Prabhat Jain (pjain125), Allison Lee (alee1244), Nick Yuan (nyuan), Juno Song (j
 Allows users to search UMD courses via PlanetTerp API by department, class number, and minimum GPA, and add them to a personal watchlist stored in MongoDB.
 
 ### YouTube Video Demo Link:
-_____
+https://youtu.be/OGWKebGMAik
 
 ### APIs:
 - PlanetTerp API v1 - (https://planetterp.com/api/v1)
 - Provides course information including department, course number, title, credits, average GPA, and professors.
 
 ### Contact Email:
-_______ 
+jsong04@terpmail.umd.edu
 
 ### Deployed App Link:
-renderlink!!
+https://three35final-7fje.onrender.com
 
 ### Features:
 - Search courses by **department**, **class number**, and **minimum GPA**.
