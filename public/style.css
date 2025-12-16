@@ -11,7 +11,7 @@ body {
 .outside {
     border: 5px solid #c93333;
     border-radius: 15px;
-    width: 500px;
+    width: 900px;
     margin: auto;
     background-color: #fff0b9;
     padding: 10px;
@@ -44,3 +44,4 @@ button {
 button:active {
     background-color: #ffb710;
 }
+
