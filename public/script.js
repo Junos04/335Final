@@ -37,7 +37,7 @@ searchForm.addEventListener('submit', async (e) => {
   const className = document.getElementById('className').value;
   const minGPA = document.getElementById('minGPA').value;
 
-  resultsDiv.innerHTML = ''; // ✅ Clear previous results or messages
+  resultsDiv.innerHTML = ''; // clear previous results or messages
 
   try {
     const res = await fetch(`/search?department=${department}&className=${className}&minGPA=${minGPA}`);
